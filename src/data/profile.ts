@@ -79,6 +79,9 @@ export const profile: Profile = {
     cloudAndDevOps: [
       'Azure AD (MSAL)',
       'Microsoft Graph API',
+      'Azure AI Foundry',
+      'Azure Document Intelligence (Form Recognizer)',
+      'Azure Storage Blobs',
       'Power Automate',
       'Git/GitHub',
       'Logstash',
@@ -140,6 +143,19 @@ export const profile: Profile = {
     },
   ],
   projects: [
+    {
+      name: 'TransmexSentinel · AI Email & Document Processing',
+      technologies: [
+        '.NET 8',
+        'Microsoft Graph API',
+        'Azure AI Foundry',
+        'Azure Document Intelligence',
+        'Azure Storage Blobs',
+        'Swagger/OpenAPI',
+      ],
+      impact:
+        'POC y servicios productivos para ingesta de correos con Graph, extracción de adjuntos PDF, análisis con Document Intelligence y Content Understanding (Azure AI Foundry), y orquestación para clasificación/movimiento de correos y extracción estructurada. Base para iniciativas AI de automatización documental.',
+    },
     {
       name: 'Carta Porte Integration Portal',
       technologies: ['React 19', '.NET 8', 'MSAL', 'AS400', 'Microsoft Graph API'],
