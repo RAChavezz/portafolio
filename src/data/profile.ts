@@ -104,6 +104,8 @@ export const profile: Profile = {
       '3D Modeling',
       '3D Printing (FDM & Resin)',
       'jqGrid',
+      'OpenAI Codex',
+      'Cursor AI',
     ],
   },
   experience: [
@@ -154,7 +156,7 @@ export const profile: Profile = {
         'Swagger/OpenAPI',
       ],
       impact:
-        'POC y servicios productivos para ingesta de correos con Graph, extracción de adjuntos PDF, análisis con Document Intelligence y Content Understanding (Azure AI Foundry), y orquestación para clasificación/movimiento de correos y extracción estructurada. Base para iniciativas AI de automatización documental.',
+        'POC and production-ready services for email ingestion via Microsoft Graph, PDF attachment extraction, analysis with Azure Document Intelligence and Content Understanding (Azure AI Foundry), and orchestration for email classification/movement and structured data extraction. Foundation for AI-driven document automation initiatives.',
     },
     {
       name: 'Carta Porte Integration Portal',
