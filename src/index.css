@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS variables for themes */
+:root {
+  --bg: #ffffff;
+  --fg: #0b1020;
+  --muted: #64748b; /* slate-500 */
+  --card: #ffffff;
+  --primary: #4f46e5; /* indigo-600 */
+  --primary-contrast: #ffffff;
+  --ring: #93c5fd; /* blue-300 */
+  --border: #e5e7eb; /* gray-200 */
+}
+html.dark {
+  --bg: #0b1020;
+  --fg: #f1f5f9; /* slate-100 */
+  --muted: #94a3b8; /* slate-400 */
+  --card: #0f172a; /* slate-900 */
+  --primary: #6366f1; /* indigo-500 */
+  --primary-contrast: #ffffff;
+  --ring: #60a5fa; /* blue-400 */
+  --border: #1f2937; /* gray-800 */
+}
+
+/* Presets */
+html.theme-default {
+  --primary: #4f46e5; /* indigo-600 */
+  --ring: #93c5fd; /* blue-300 */
+}
+html.theme-ocean {
+  --primary: #0284c7; /* sky-600 */
+  --ring: #7dd3fc; /* sky-300 */
+}
+html.theme-emerald {
+  --primary: #059669; /* emerald-600 */
+  --ring: #86efac; /* emerald-300 */
+}
+
+html, body, #root { height: 100%; }
+body { @apply bg-bg text-fg antialiased; }
