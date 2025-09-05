@@ -63,6 +63,8 @@ export const profile: Profile = {
   links: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/rachavezmia/' },
     { label: 'Email', href: 'mailto:ricardoachavezjimenez@gmail.com' },
+    { label: 'Phone', href: 'tel:+528677393628' },
+    { label: 'WhatsApp', href: 'https://wa.me/528677393628' },
   ],
   summary:
     'Full Stack Developer specialized in optimizing mission-critical business processes through scalable web and cloud solutions that reduce costs, errors, and operational time. Proficient in .NET 8, Angular 17, React 19, Python, Azure AD (MSAL), Microsoft Graph API, CouchDB, AS400 integrations, and process automation with Selenium. Proven ability to lead projects from analysis to deployment, ensuring security, scalability, and regulatory compliance.',

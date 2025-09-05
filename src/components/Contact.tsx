@@ -12,16 +12,16 @@ export default function Contact() {
           Email: {profile.email}
         </a>
         {profile.links
-          .filter((l) => l.label.toLowerCase().includes('linkedin'))
+          .filter((l) => ['linkedin', 'phone', 'whatsapp'].includes(l.label.toLowerCase()))
           .map((l) => (
             <a
               key={l.href}
               href={l.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={l.label.toLowerCase() === 'linkedin' ? "_blank" : undefined}
+              rel={l.label.toLowerCase() === 'linkedin' ? "noopener noreferrer" : undefined}
               className="rounded-radius-md border border-border bg-card px-4 py-3 text-center text-fg shadow-elevation-1 hover:shadow-elevation-2 focus:outline-none focus:ring-2 focus:ring-ring"
             >
-              LinkedIn
+              {l.label}
             </a>
           ))}
       </div>
