@@ -21,10 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v4
-        with:
-          enablement: true
+      # Configure Pages step removed due to repo permission constraints
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
