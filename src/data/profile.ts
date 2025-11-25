@@ -16,6 +16,7 @@ export type Project = {
   name: string;
   technologies: string[];
   impact: string;
+  details?: string[];
 };
 
 export type Education = {
@@ -148,7 +149,7 @@ export const profile: Profile = {
   ],
   projects: [
     {
-      name: 'TransmexSentinel · AI Email & Document Processing',
+      name: 'Sentinel – AI-Powered Document and Customs Automation Platform',
       technologies: [
         '.NET 8',
         'Microsoft Graph API',
@@ -158,7 +159,15 @@ export const profile: Profile = {
         'Swagger/OpenAPI',
       ],
       impact:
-        'POC and production-ready services for email ingestion via Microsoft Graph, PDF attachment extraction, analysis with Azure Document Intelligence and Content Understanding (Azure AI Foundry), and orchestration for email classification/movement and structured data extraction. Foundation for AI-driven document automation initiatives.',
+        'In-house platform for AI-powered automation and orchestration of document workflows for customs and logistics operations that handle high volumes of emails, attachments, and shipment files. Combines LLMs, RAG, content understanding, and document intelligence to classify, extract, validate, and prepare information before sending it to operational or legacy systems (for example, AS/400), reducing manual work, errors, and turnaround times.',
+      details: [
+        'Intelligent classification of emails and documents using language models to identify, classify, and prioritize emails and attachments (invoices, packing lists, customs entries, contracts, etc.).',
+        'Content Understanding and Document Intelligence to extract fields from PDFs, run advanced OCR, and detect tables and key entities, turning unstructured documents into clean, normalized records.',
+        'Normalization of operational files (Excel → standard JSON) by mapping each client’s custom Excel templates into a standard JSON model that decouples input formats from the business core.',
+        'Rules engine for goods validation and regulatory compliance, checking data against government regulations and internal policies before inserting into core systems.',
+        'Integration with legacy platforms such as AS/400 to automatically insert pre-validated records, eliminating double capture and reducing turnaround times.',
+        'RAG-based architecture that enables internal assistants for operational and regulatory queries and supports end-to-end digital workflows with better traceability and reduced paper usage.',
+      ],
     },
     {
       name: 'Carta Porte Integration Portal',
