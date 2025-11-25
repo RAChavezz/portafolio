@@ -42,9 +42,10 @@ export default function Projects() {
               actions={
                 p.details && (
                   <button
-                    className="text-xs text-primary underline hover:text-primary/80"
+                    className="inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/5 px-3 py-1 text-xs font-medium text-primary shadow-sm transition-colors hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
                     onClick={() => setSelectedProject(p)}
                   >
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary" />
                     View details
                   </button>
                 )
@@ -68,7 +69,7 @@ export default function Projects() {
               title={selectedProject.name}
               actions={
                 <button
-                  className="rounded-full px-2 py-1 text-sm text-muted hover:bg-border"
+                  className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-border bg-bg text-xs text-muted shadow-sm transition-colors hover:bg-border/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
                   onClick={() => setSelectedProject(null)}
                   aria-label="Close details"
                 >
