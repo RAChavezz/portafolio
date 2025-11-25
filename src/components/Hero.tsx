@@ -19,7 +19,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="lg:ml-auto flex items-start lg:justify-end gap-2">
+        <div className="lg:ml-auto flex items-start lg:justify-end gap-2 whitespace-nowrap">
           <a
             href={profile.links.find(l => l.label.toLowerCase().includes('linkedin'))?.href}
             target="_blank"
