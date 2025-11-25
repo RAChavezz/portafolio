@@ -35,6 +35,12 @@ export default function Hero() {
             Email
           </a>
           <a
+            href={`${import.meta.env.BASE_URL}?view=cv`}
+            className="rounded-radius-md border border-border bg-card px-4 py-2 text-fg shadow-elevation-1 hover:shadow-elevation-2 focus:outline-none focus:ring-2 focus:ring-ring"
+          >
+            View CV (Print)
+          </a>
+          <a
             href={`${import.meta.env.BASE_URL}cv/Ricardo_Alonso_Chavez_Jimenez_EN.docx`}
             download="Ricardo_Alonso_Chavez_Jimenez_EN.docx"
             className="rounded-radius-md border border-border bg-card px-4 py-2 text-fg shadow-elevation-1 hover:shadow-elevation-2 focus:outline-none focus:ring-2 focus:ring-ring"
