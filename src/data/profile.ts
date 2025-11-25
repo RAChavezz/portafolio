@@ -228,6 +228,8 @@ export const profile: Profile = {
   certifications: [
     { name: 'ITIL 4 Foundation', issuer: 'PeopleCert' },
     { name: 'CouchDB Essentials', issuer: 'Udemy' },
+    { name: 'Artificial Intelligence on Microsoft Azure', issuer: 'Microsoft (Coursera)' },
+    { name: 'Microsoft Azure Machine Learning', issuer: 'Microsoft (Coursera)' },
   ],
   languages: [
     { language: 'Spanish', level: 'Native' },
