@@ -1,9 +1,9 @@
 import { profile } from '../data/profile';
-import Card from './ui/Card';
+import HeroCard from './ui/HeroCard';
 
 export default function Hero() {
   return (
-    <Card className="container mx-auto mt-4">
+    <HeroCard>
       <div className="grid gap-6 lg:grid-cols-3">
         <div className="lg:col-span-2">
           <h2 className="text-3xl sm:text-4xl font-bold">{profile.name}</h2>
@@ -49,7 +49,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-    </Card>
+    </HeroCard>
   );
 }
 
